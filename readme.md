@@ -9,7 +9,7 @@
 
 1. Clona este repositorio:
 
-git clone https://github.com/tuusuario/mi-aplicacion-expo.git
+git clone https://github.com/felixmaldonado17/pokedex
 
 2. Navega al directorio de tu aplicación:
 
@@ -18,7 +18,7 @@ cd mi-aplicacion-expo
 3. Instala las dependencias:
 
 ```bash
-npm install
+yarn add
 ```
 
 4. Instala la app Expo Go en tu celular.
