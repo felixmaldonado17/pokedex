@@ -24,7 +24,7 @@ export function Carrousel(props: PropsTypes) {
       dot={<View style={Style.dot} />}
       activeDot={<View style={[Style.dot, Style.activeDot]} />}
     >
-      <View style={Style.slide}>
+      {slide1Info.length > 0 && <View style={Style.slide}>
         <Text style={Style.slideTitle}>Evolution Chain</Text>
         <View style={Style.evolutionChainContainer}>
           {
@@ -48,11 +48,12 @@ export function Carrousel(props: PropsTypes) {
               </View>)
           }
         </View>
-      </View>
+      </View>}
+
       <View style={Style.slide}>
         <Text style={Style.slideTitle}>Base Stats</Text>
         <View style={Style.rotatedView}>
-          <BarChart data={barChartData} horizontal showValuesAsTopLabel maxValue={100} hideAxesAndRules xAxisLabelTextStyle={Style.labelStyle} barStyle={Style.barStyle}/>
+          <BarChart data={barChartData} horizontal showValuesAsTopLabel maxValue={100} hideAxesAndRules xAxisLabelTextStyle={Style.labelStyle} barStyle={Style.barStyle} />
         </View>
       </View>
     </Swiper>

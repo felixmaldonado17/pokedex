@@ -95,7 +95,7 @@ export default function ListPokemon({ navigation }: any) {
           inputContainerStyle={style.searchBarInputStyle}
         />
       </View>
-      {pokemonList.length == 0 && isLoadingPokemon == false ?
+      {pokemonList.length == 0 && isLoadingPokemon == false && search!="" ?
         <View style={style.notFoundContainer}>
           <View style={style.imageNotFound}>
             <Image source={require('../assets/NotFoundImage.png')} />
